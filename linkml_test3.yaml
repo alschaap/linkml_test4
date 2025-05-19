@@ -1,0 +1,22 @@
+id: https://example.org/derived_schema
+name: derived_schema
+prefixes:
+  ex: https://example.org/
+  linkml: https://w3id.org/linkml/
+default_prefix: ex
+default_range: string
+imports:
+  - linkml:types
+  - base_schema
+
+classes:
+  Employee:
+    is_a: Person
+    description: A person employed by an organization.
+    attributes:
+      employee_id:
+        #identifier: true
+        range: string
+      department:
+        range: string
+

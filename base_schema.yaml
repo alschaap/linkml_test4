@@ -1,0 +1,27 @@
+id: https://example.org/base_schema
+name: base_schema
+prefixes:
+  ex: https://example.org/
+default_prefix: ex
+default_range: string
+imports: []
+
+classes:
+  Person:
+    description: A human being.
+    attributes:
+      id:
+        identifier: true
+        range: string
+      name:
+        required: true
+      gender:
+        range: GenderEnum
+
+enums:
+  GenderEnum:
+    permissible_values:
+      male: {}
+      female: {}
+      other: {}
+
