@@ -288,6 +288,24 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#slots-constrained-by-this-enum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slots constrained by this enum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Annotations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#linkml-source" class="md-nav__link">
     <span class="md-ellipsis">
       LinkML Source
@@ -317,10 +335,51 @@
 
 <h1 id="enum-departmentcodelist"><strong> Enum: </strong> DepartmentCodelist</h1>
 <p><em>This is a dynamic enum</em></p>
+<h2 id="slots-constrained-by-this-enum">Slots constrained by this enum</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../department/">department</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="annotations">Annotations</h2>
+<table>
+<thead>
+<tr>
+<th>property</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ex_12345_date</td>
+<td>2025-05-22</td>
+</tr>
+</tbody>
+</table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details open>
 
 <pre><code class="language-yaml">name: department_codelist
+annotations:
+  ex_12345_date:
+    tag: ex_12345_date
+    value: 2025-05-22
+  ex_12345_version:
+    tag: ex_12345_version
+    value: 1
+  ex_98765_date:
+    tag: ex_98765_date
+    value: 2025-05-20
+  ex_98765_version:
+    tag: ex_98765_version
+    value: 2
 from_schema: https://example.org/derived_schema
 exact_mappings:
 - ex:12345

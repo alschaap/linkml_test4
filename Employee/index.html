@@ -185,6 +185,8 @@
 
       Employee : department
 
+          Employee --|&gt; DepartmentCodelist : department
+
       Employee : employee_id
 
       Employee : gender
@@ -223,7 +225,7 @@
 </tr>
 <tr>
 <td><a href="../department/">department</a>: <br/> <i> None </i></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>0..1 <br/> <a href="../DepartmentCodelist/">DepartmentCodelist</a></td>
 <td>direct</td>
 <td></td>
 </tr>
@@ -265,7 +267,7 @@ attributes:
     from_schema: https://example.org/derived_schema
     domain_of:
     - Employee
-    range: string
+    range: department_codelist
 
 </code></pre>
 </details>
