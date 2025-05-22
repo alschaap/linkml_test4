@@ -24,6 +24,9 @@
     
       <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
       
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
       
 
 
@@ -41,12 +44,6 @@
       
     
     
-      <link rel="stylesheet" href="css/ansi-colours.css">
-    
-      <link rel="stylesheet" href="css/jupyter-cells.css">
-    
-      <link rel="stylesheet" href="css/pandas-dataframe.css">
-    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -57,7 +54,12 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="black" data-md-color-primary="black" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -66,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#derived_schema" class="md-skip">
+        <a href="#derived_schema-a-data-model-for-life-sciences-data" class="md-skip">
           Skip to content
         </a>
       
@@ -109,8 +111,8 @@
       </div>
     </div>
     
+      
     
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -272,18 +274,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#classes" class="md-nav__link">
+  <a href="#classes-visualization" class="md-nav__link">
     <span class="md-ellipsis">
-      Classes
+      Classes (Visualization)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
+  <a href="#class-properties" class="md-nav__link">
     <span class="md-ellipsis">
-      Slots
+      Class Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#predicates-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Predicates (Visualization)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qualifiers-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Qualifiers (Visualization)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#associations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Associations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#association-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Association Properties
     </span>
   </a>
   
@@ -299,20 +337,26 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#types" class="md-nav__link">
-    <span class="md-ellipsis">
-      Types
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#subsets" class="md-nav__link">
     <span class="md-ellipsis">
       Subsets
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Subsets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#citing-biolink-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Citing Biolink Model
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -373,18 +417,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#classes" class="md-nav__link">
+  <a href="#classes-visualization" class="md-nav__link">
     <span class="md-ellipsis">
-      Classes
+      Classes (Visualization)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
+  <a href="#class-properties" class="md-nav__link">
     <span class="md-ellipsis">
-      Slots
+      Class Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#predicates-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Predicates (Visualization)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qualifiers-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Qualifiers (Visualization)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#associations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Associations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#association-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Association Properties
     </span>
   </a>
   
@@ -400,20 +480,26 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#types" class="md-nav__link">
-    <span class="md-ellipsis">
-      Types
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#subsets" class="md-nav__link">
     <span class="md-ellipsis">
       Subsets
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Subsets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#citing-biolink-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Citing Biolink Model
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -436,10 +522,16 @@
   
 
 
-<h1 id="derived_schema">derived_schema</h1>
-<p>URI: https://example.org/derived_schema</p>
-<p>Name: derived_schema</p>
-<h2 id="classes">Classes</h2>
+<h1 id="derived_schema-a-data-model-for-life-sciences-data">derived_schema: a data model for life-sciences data.</h1>
+<p>The Biolink Model is a high-level, open-source data model designed to standardize types and relationships in biological
+knowledge graphs, covering entities like genes, diseases, chemical substances, organisms, genomics, phenotypes, and
+more.  Biolink Model can be used to formalize the relationships between data structures in
+translational science. It incorporates object-oriented classification and graph-oriented features. The core of the
+model is a set of hierarchical, interconnected classes (or categories) and relationships between them (or predicates).
+The model provides class and edge attributes and associations that guide how entities should relate to one another.
+The goal of the Biolink Model is to provide a consistent framework for representing biological knowledge across various
+databases and formats.  For more information, see: <a href="understanding-the-model.md">understanding the model</a></p>
+<h2 id="classes-visualization">Classes (<a href="categories.html">Visualization</a>)</h2>
 <table>
 <thead>
 <tr>
@@ -449,46 +541,25 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="Employee/">Employee</a></td>
+<td>A person employed by an organization.</td>
+</tr>
+<tr>
 <td><a href="Person/">Person</a></td>
-<td>A human being</td>
-</tr>
-<tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Employee/">Employee</a></td>
-<td>A person employed by an organization</td>
+<td>A human being.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Slot</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="department/">department</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="employee_id/">employee_id</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="gender/">gender</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="id/">id</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="name/">name</a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<h2 id="class-properties">Class Properties</h2>
+<p>| Property | Description |</p>
+<h2 id="predicates-visualization">Predicates (<a href="predicates.html">Visualization</a>)</h2>
+<p>| Property | Description |</p>
+<h2 id="qualifiers-visualization">Qualifiers (<a href="qualifiers.html">Visualization</a>)</h2>
+<p>| Property | Description |</p>
+<h2 id="associations">Associations</h2>
+<p>| Association | Description |</p>
+<h2 id="association-properties">Association Properties</h2>
+<p>| Property | Description |</p>
 <h2 id="enumerations">Enumerations</h2>
 <table>
 <thead>
@@ -500,94 +571,7 @@
 <tbody>
 <tr>
 <td><a href="GenderEnum/">GenderEnum</a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="types">Types</h2>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="Boolean/">Boolean</a></td>
-<td>A binary (true or false) value</td>
-</tr>
-<tr>
-<td><a href="Curie/">Curie</a></td>
-<td>a compact URI</td>
-</tr>
-<tr>
-<td><a href="Date/">Date</a></td>
-<td>a date (year, month and day) in an idealized calendar</td>
-</tr>
-<tr>
-<td><a href="DateOrDatetime/">DateOrDatetime</a></td>
-<td>Either a date or a datetime</td>
-</tr>
-<tr>
-<td><a href="Datetime/">Datetime</a></td>
-<td>The combination of a date and time</td>
-</tr>
-<tr>
-<td><a href="Decimal/">Decimal</a></td>
-<td>A real number with arbitrary precision that conforms to the xsd:decimal speci...</td>
-</tr>
-<tr>
-<td><a href="Double/">Double</a></td>
-<td>A real number that conforms to the xsd:double specification</td>
-</tr>
-<tr>
-<td><a href="Float/">Float</a></td>
-<td>A real number that conforms to the xsd:float specification</td>
-</tr>
-<tr>
-<td><a href="Integer/">Integer</a></td>
-<td>An integer</td>
-</tr>
-<tr>
-<td><a href="Jsonpath/">Jsonpath</a></td>
-<td>A string encoding a JSON Path</td>
-</tr>
-<tr>
-<td><a href="Jsonpointer/">Jsonpointer</a></td>
-<td>A string encoding a JSON Pointer</td>
-</tr>
-<tr>
-<td><a href="Ncname/">Ncname</a></td>
-<td>Prefix part of CURIE</td>
-</tr>
-<tr>
-<td><a href="Nodeidentifier/">Nodeidentifier</a></td>
-<td>A URI, CURIE or BNODE that represents a node in a model</td>
-</tr>
-<tr>
-<td><a href="Objectidentifier/">Objectidentifier</a></td>
-<td>A URI or CURIE that represents an object in the model</td>
-</tr>
-<tr>
-<td><a href="Sparqlpath/">Sparqlpath</a></td>
-<td>A string encoding a SPARQL Property Path</td>
-</tr>
-<tr>
-<td><a href="String/">String</a></td>
-<td>A character string</td>
-</tr>
-<tr>
-<td><a href="Time/">Time</a></td>
-<td>A time object represents a (local) time of day, independent of any particular...</td>
-</tr>
-<tr>
-<td><a href="Uri/">Uri</a></td>
-<td>a complete URI</td>
-</tr>
-<tr>
-<td><a href="Uriorcurie/">Uriorcurie</a></td>
-<td>a URI or a CURIE</td>
+<td>None</td>
 </tr>
 </tbody>
 </table>
@@ -606,6 +590,12 @@
 </tr>
 </tbody>
 </table>
+<h4 id="citing-biolink-model">Citing Biolink Model</h4>
+<p><small> Unni DR, Moxon SAT, Bada M, Brush M, Bruskiewich R, Caufield JH, Clemons PA, Dancik V, Dumontier M, Fecho K, Glusman G,
+Hadlock JJ, Harris NL, Joshi A, Putman T, Qin G, Ramsey SA, Shefchek KA, Solbrig H, Soman K, Thessen AE, Haendel MA,
+Bizon C, Mungall CJ, The Biomedical Data Translator Consortium (2022).
+Biolink Model: A universal schema for knowledge graphs in clinical, biomedical, and translational science. Clin Transl Sci. Wiley; 2022 Jun 6; <a href="https://onlinelibrary.wiley.com/doi/10.1111/cts.13302">https://onlinelibrary.wiley.com/doi/10.1111/cts.13302</a>
+</small></p>
 
 
 
