@@ -17,6 +17,7 @@ Testing how to render linkml on github pages
 
 | Property | Description |
 {% for np in schemaview.all_slots(ordered_by="lexical").values()|sort(attribute='name') -%}
+{%- if 'core property' not in schemaview.slot_ancestors(np.name) -%}
 | --- | --- |
 | {{gen.link(np)}} | {{np.description}} |
 {%- endif -%}
