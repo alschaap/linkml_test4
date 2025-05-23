@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#derived_schema-a-data-model-for-life-sciences-data" class="md-skip">
+        <a href="#derived_schema" class="md-skip">
           Skip to content
         </a>
       
@@ -274,18 +274,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#classes-visualization" class="md-nav__link">
+  <a href="#classes" class="md-nav__link">
     <span class="md-ellipsis">
-      Classes (Visualization)
+      Classes
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#class-properties" class="md-nav__link">
+  <a href="#slots" class="md-nav__link">
     <span class="md-ellipsis">
-      Class Properties
+      Slots
     </span>
   </a>
   
@@ -295,6 +295,15 @@
   <a href="#enumerations" class="md-nav__link">
     <span class="md-ellipsis">
       Enumerations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types
     </span>
   </a>
   
@@ -366,18 +375,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#classes-visualization" class="md-nav__link">
+  <a href="#classes" class="md-nav__link">
     <span class="md-ellipsis">
-      Classes (Visualization)
+      Classes
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#class-properties" class="md-nav__link">
+  <a href="#slots" class="md-nav__link">
     <span class="md-ellipsis">
-      Class Properties
+      Slots
     </span>
   </a>
   
@@ -387,6 +396,15 @@
   <a href="#enumerations" class="md-nav__link">
     <span class="md-ellipsis">
       Enumerations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types
     </span>
   </a>
   
@@ -420,9 +438,10 @@
   
 
 
-<h1 id="derived_schema-a-data-model-for-life-sciences-data">derived_schema: a data model for life-sciences data.</h1>
-<p>Testing how to render linkml on github pages</p>
-<h2 id="classes-visualization">Classes (<a href="categories.html">Visualization</a>)</h2>
+<h1 id="derived_schema">derived_schema</h1>
+<p>URI: https://example.org/derived_schema</p>
+<p>Name: derived_schema</p>
+<h2 id="classes">Classes</h2>
 <table>
 <thead>
 <tr>
@@ -432,51 +451,55 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="DerivedEmployee.md">DerivedEmployee</a></td>
-<td>A person employed by an organization.</td>
-</tr>
-<tr>
 <td><a href="Education.md">Education</a></td>
 <td>a persons education</td>
 </tr>
 <tr>
 <td><a href="Person.md">Person</a></td>
-<td>A human being.</td>
+<td>A human being</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="DerivedEmployee.md">DerivedEmployee</a></td>
+<td>A person employed by an organization</td>
 </tr>
 </tbody>
 </table>
-<h2 id="class-properties">Class Properties</h2>
+<h2 id="slots">Slots</h2>
 <table>
 <thead>
 <tr>
-<th>Property</th>
+<th>Slot</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><a href="chore_property.md">chore_property</a></td>
+<td>is a chore class</td>
+</tr>
+<tr>
 <td><a href="department.md">department</a></td>
-<td>None</td>
+<td></td>
 </tr>
 <tr>
 <td><a href="employee_id.md">employee_id</a></td>
-<td>None</td>
+<td></td>
 </tr>
 <tr>
 <td><a href="gender.md">gender</a></td>
-<td>None</td>
+<td></td>
 </tr>
 <tr>
 <td><a href="id.md">id</a></td>
-<td>None</td>
+<td></td>
 </tr>
 <tr>
 <td><a href="name.md">name</a></td>
-<td>None</td>
+<td></td>
 </tr>
 <tr>
 <td><a href="person.md">person</a></td>
-<td>None</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -491,11 +514,98 @@
 <tbody>
 <tr>
 <td><a href="DepartmentCodelist.md">DepartmentCodelist</a></td>
-<td>None</td>
+<td></td>
 </tr>
 <tr>
 <td><a href="GenderEnum.md">GenderEnum</a></td>
-<td>None</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="types">Types</h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="Boolean.md">Boolean</a></td>
+<td>A binary (true or false) value</td>
+</tr>
+<tr>
+<td><a href="Curie.md">Curie</a></td>
+<td>a compact URI</td>
+</tr>
+<tr>
+<td><a href="Date.md">Date</a></td>
+<td>a date (year, month and day) in an idealized calendar</td>
+</tr>
+<tr>
+<td><a href="DateOrDatetime.md">DateOrDatetime</a></td>
+<td>Either a date or a datetime</td>
+</tr>
+<tr>
+<td><a href="Datetime.md">Datetime</a></td>
+<td>The combination of a date and time</td>
+</tr>
+<tr>
+<td><a href="Decimal.md">Decimal</a></td>
+<td>A real number with arbitrary precision that conforms to the xsd:decimal speci...</td>
+</tr>
+<tr>
+<td><a href="Double.md">Double</a></td>
+<td>A real number that conforms to the xsd:double specification</td>
+</tr>
+<tr>
+<td><a href="Float.md">Float</a></td>
+<td>A real number that conforms to the xsd:float specification</td>
+</tr>
+<tr>
+<td><a href="Integer.md">Integer</a></td>
+<td>An integer</td>
+</tr>
+<tr>
+<td><a href="Jsonpath.md">Jsonpath</a></td>
+<td>A string encoding a JSON Path</td>
+</tr>
+<tr>
+<td><a href="Jsonpointer.md">Jsonpointer</a></td>
+<td>A string encoding a JSON Pointer</td>
+</tr>
+<tr>
+<td><a href="Ncname.md">Ncname</a></td>
+<td>Prefix part of CURIE</td>
+</tr>
+<tr>
+<td><a href="Nodeidentifier.md">Nodeidentifier</a></td>
+<td>A URI, CURIE or BNODE that represents a node in a model</td>
+</tr>
+<tr>
+<td><a href="Objectidentifier.md">Objectidentifier</a></td>
+<td>A URI or CURIE that represents an object in the model</td>
+</tr>
+<tr>
+<td><a href="Sparqlpath.md">Sparqlpath</a></td>
+<td>A string encoding a SPARQL Property Path</td>
+</tr>
+<tr>
+<td><a href="String.md">String</a></td>
+<td>A character string</td>
+</tr>
+<tr>
+<td><a href="Time.md">Time</a></td>
+<td>A time object represents a (local) time of day, independent of any particular...</td>
+</tr>
+<tr>
+<td><a href="Uri.md">Uri</a></td>
+<td>a complete URI</td>
+</tr>
+<tr>
+<td><a href="Uriorcurie.md">Uriorcurie</a></td>
+<td>a URI or a CURIE</td>
 </tr>
 </tbody>
 </table>
