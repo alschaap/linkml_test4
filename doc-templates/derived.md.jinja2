@@ -1,15 +1,3 @@
-## Classes ([Visualization](categories.html))
-
-| Class | Description |
-{% for c in schemaview.all_classes(ordered_by="lexical").values()|sort(attribute='name') -%}
-{%- if 'association' not in schemaview.class_ancestors(c.name) and not schemaview.is_mixin(c.name) 
-    and not c.name.startswith("derived_") -%}
-| --- | --- |
-| {{gen.link(c)}} | {{c.description}} |
-{%- endif -%}
-{% endfor %}
-
-
 # Derived Classes
 
 These classes are derived from the core Biolink Model.  
