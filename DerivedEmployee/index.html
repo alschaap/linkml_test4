@@ -162,54 +162,11 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#identifier-and-mapping-information">
-<span class="md-ellipsis">
-      Identifier and Mapping Information
-    </span>
-</a>
-<nav aria-label="Identifier and Mapping Information" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#schema-source">
-<span class="md-ellipsis">
-      Schema Source
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mappings">
-<span class="md-ellipsis">
-      Mappings
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#linkml-source">
 <span class="md-ellipsis">
       LinkML Source
     </span>
 </a>
-<nav aria-label="LinkML Source" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#direct">
-<span class="md-ellipsis">
-      Direct
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#induced">
-<span class="md-ellipsis">
-      Induced
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -218,38 +175,23 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="class-derivedemployee">Class: DerivedEmployee</h1>
-<p><em>A person employed by an organization.</em></p>
-<p>URI: <a href="https://example.org/DerivedEmployee">ex:DerivedEmployee</a></p>
+<h1 id="class-derivedemployee"><strong>  Class: DerivedEmployee </strong></h1>
+<div class="highlight-box">
+<strong>Description:</strong><i> A person employed by an organization.</i><br/>
+</div>
 <div class="mermaid"> classDiagram
     class DerivedEmployee
-    click DerivedEmployee href "../DerivedEmployee"
       Person &lt;|-- DerivedEmployee
-        click Person href "../Person"
 
       DerivedEmployee : department
 
-
-
-
-
-        DerivedEmployee --&gt; "0..1" DepartmentCodelist : department
-        click DepartmentCodelist href "../DepartmentCodelist"
-
-
+          DerivedEmployee --|&gt; DepartmentCodelist : department
 
       DerivedEmployee : employee_id
 
       DerivedEmployee : gender
 
-
-
-
-
-        DerivedEmployee --&gt; "0..1" GenderEnum : gender
-        click GenderEnum href "../GenderEnum"
-
-
+          DerivedEmployee --|&gt; GenderEnum : gender
 
       DerivedEmployee : id
 
@@ -270,71 +212,45 @@
 <tr>
 <th>Name</th>
 <th>Cardinality and Range</th>
-<th>Description</th>
 <th>Inheritance</th>
+<th>Examples</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../employee_id/">employee_id</a></td>
+<td><a href="../employee_id/">employee_id</a>: <br> <i> None </i></br></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
 <td>direct</td>
+<td></td>
 </tr>
 <tr>
-<td><a href="../department/">department</a></td>
+<td><a href="../department/">department</a>: <br/> <i> None </i></td>
 <td>0..1 <br/> <a href="../DepartmentCodelist/">DepartmentCodelist</a></td>
-<td></td>
 <td>direct</td>
-</tr>
-<tr>
-<td><a href="../id/">id</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
 <td></td>
-<td><a href="../Person/">Person</a></td>
 </tr>
 <tr>
-<td><a href="../name/">name</a></td>
+<td><a href="../id/">id</a>: <br/> <i> None </i></td>
 <td>1 <br/> <a href="../String/">String</a></td>
-<td></td>
 <td><a href="../Person/">Person</a></td>
+<td></td>
 </tr>
 <tr>
-<td><a href="../gender/">gender</a></td>
+<td><a href="../name/">name</a>: <br/> <i> None </i></td>
+<td>1 <br/> <a href="../String/">String</a></td>
+<td><a href="../Person/">Person</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../gender/">gender</a>: <br/> <i> None </i></td>
 <td>0..1 <br/> <a href="../GenderEnum/">GenderEnum</a></td>
-<td></td>
 <td><a href="../Person/">Person</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://example.org/derived_schema</li>
-</ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>ex:DerivedEmployee</td>
-</tr>
-<tr>
-<td>native</td>
-<td>ex:DerivedEmployee</td>
+<td></td>
 </tr>
 </tbody>
 </table>
 <h2 id="linkml-source">LinkML Source</h2>
-<!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
-<h3 id="direct">Direct</h3>
-<details>
+<details open="">
 <pre><code class="language-yaml">name: derived_Employee
 description: A person employed by an organization.
 from_schema: https://example.org/derived_schema
@@ -343,75 +259,15 @@ attributes:
   employee_id:
     name: employee_id
     from_schema: https://example.org/derived_schema
-    rank: 1000
     domain_of:
     - derived_Employee
     range: string
   department:
     name: department
     from_schema: https://example.org/derived_schema
-    rank: 1000
     domain_of:
     - derived_Employee
     range: department_codelist
-
-</code></pre>
-</details>
-<h3 id="induced">Induced</h3>
-<details>
-<pre><code class="language-yaml">name: derived_Employee
-description: A person employed by an organization.
-from_schema: https://example.org/derived_schema
-is_a: Person
-attributes:
-  employee_id:
-    name: employee_id
-    from_schema: https://example.org/derived_schema
-    rank: 1000
-    alias: employee_id
-    owner: derived_Employee
-    domain_of:
-    - derived_Employee
-    range: string
-  department:
-    name: department
-    from_schema: https://example.org/derived_schema
-    rank: 1000
-    alias: department
-    owner: derived_Employee
-    domain_of:
-    - derived_Employee
-    range: department_codelist
-  id:
-    name: id
-    from_schema: https://example.org/derived_schema
-    rank: 1000
-    identifier: true
-    alias: id
-    owner: derived_Employee
-    domain_of:
-    - Person
-    - Education
-    range: string
-  name:
-    name: name
-    from_schema: https://example.org/derived_schema
-    rank: 1000
-    alias: name
-    owner: derived_Employee
-    domain_of:
-    - Person
-    range: string
-    required: true
-  gender:
-    name: gender
-    from_schema: https://example.org/derived_schema
-    rank: 1000
-    alias: gender
-    owner: derived_Employee
-    domain_of:
-    - Person
-    range: GenderEnum
 
 </code></pre>
 </details>
