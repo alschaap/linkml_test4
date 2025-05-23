@@ -16,10 +16,9 @@ Testing how to render linkml on github pages
 ## Class Properties
 
 | Property | Description |
-{% for np in schemaview.all_slots(ordered_by="lexical").values()|sort(attribute='name') -%}
 | --- | --- |
-| {{gen.link(np)}} | {{np.description}} |
-{%- endif -%}
+{% for np in schemaview.all_slots(ordered_by="lexical").values()|sort(attribute='name') -%}
+| {{gen.link(np)}} | {{np.description or "No description"}} |
 {% endfor %}
 
 
