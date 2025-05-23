@@ -386,20 +386,52 @@
 </thead>
 <tbody>
 <tr>
-<td>ex:12345.date</td>
+<td>ex_12345.date</td>
 <td>2025-05-22</td>
 </tr>
 <tr>
-<td>ex:12345.version</td>
+<td>ex_12345.version</td>
 <td>1</td>
 </tr>
 <tr>
-<td>ex:98765.date</td>
+<td>ex_98765.date</td>
 <td>2025-05-20</td>
 </tr>
 <tr>
-<td>ex:9876.version</td>
+<td>ex_9876.version</td>
 <td>2</td>
+</tr>
+<tr>
+<td>value_set.metadata</td>
+<td>{</td>
+</tr>
+<tr>
+<td>"uri": "ncit:C28421",</td>
+<td></td>
+</tr>
+<tr>
+<td>"label": "Sex",</td>
+<td></td>
+</tr>
+<tr>
+<td>"source": "NCIt",</td>
+<td></td>
+</tr>
+<tr>
+<td>"version": "23.05d",</td>
+<td></td>
+</tr>
+<tr>
+<td>"last_updated": "2024-12-01"</td>
+<td></td>
+</tr>
+<tr>
+<td>}</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -412,18 +444,22 @@
 
 <pre><code class="language-yaml">name: department_codelist
 annotations:
-  ex:12345.date:
-    tag: ex:12345.date
+  ex_12345.date:
+    tag: ex_12345.date
     value: 2025-05-22
-  ex:12345.version:
-    tag: ex:12345.version
+  ex_12345.version:
+    tag: ex_12345.version
     value: 1
-  ex:98765.date:
-    tag: ex:98765.date
+  ex_98765.date:
+    tag: ex_98765.date
     value: 2025-05-20
-  ex:9876.version:
-    tag: ex:9876.version
+  ex_9876.version:
+    tag: ex_9876.version
     value: 2
+  value_set.metadata:
+    tag: value_set.metadata
+    value: &quot;{\n \&quot;uri\&quot;: \&quot;ncit:C28421\&quot;,\n \&quot;label\&quot;: \&quot;Sex\&quot;,\n \&quot;source\&quot;: \&quot;NCIt\&quot;\
+      ,\n \&quot;version\&quot;: \&quot;23.05d\&quot;,\n \&quot;last_updated\&quot;: \&quot;2024-12-01\&quot;\n }\n&quot;
 from_schema: https://example.org/derived_schema
 exact_mappings:
 - ex:12345
