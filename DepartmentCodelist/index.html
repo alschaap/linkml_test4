@@ -8,10 +8,8 @@
       
       
       
-        <link rel="canonical" href="https://alschaap.github.io/linkml_test4/derived/">
+        <link rel="canonical" href="https://alschaap.github.io/linkml_test4/DepartmentCodelist/">
       
-      
-        <link rel="prev" href="..">
       
       
       
@@ -20,7 +18,7 @@
     
     
       
-        <title>Derived - linkml_test4</title>
+        <title>Enum: DepartmentCodelist - linkml_test4</title>
       
     
     
@@ -70,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#derived_schema-a-data-model-for-life-sciences-data" class="md-skip">
+        <a href="#enum-departmentcodelist" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Derived
+              Enum: DepartmentCodelist
             
           </span>
         </div>
@@ -245,19 +243,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../derived/" class="md-nav__link">
         
   
   
@@ -268,7 +257,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -315,6 +303,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#slots-constrained-by-this-enum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slots constrained by this enum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Annotations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkml-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      LinkML Source
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -332,24 +355,64 @@
   
 
 
-<h1 id="derived_schema-a-data-model-for-life-sciences-data">derived_schema: a data model for life-sciences data.</h1>
-<h1 id="derived-classes">Derived Classes</h1>
-<p>These classes are derived from the core Biolink Model.<br />
-Return to the <a href="../">Core Model</a>.</p>
+<h1 id="enum-departmentcodelist"><strong> Enum: </strong> DepartmentCodelist</h1>
+<p><em>This is a dynamic enum</em></p>
+<h2 id="slots-constrained-by-this-enum">Slots constrained by this enum</h2>
 <table>
 <thead>
 <tr>
-<th>Derived Class</th>
-<th>Description</th>
+<th>Name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="#derived_employee">derived_Employee</a></td>
-<td>A person employed by an organization.</td>
+<td><a href="../department/">department</a></td>
 </tr>
 </tbody>
 </table>
+<h2 id="annotations">Annotations</h2>
+<table>
+<thead>
+<tr>
+<th>property</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ex_12345.date</td>
+<td>2025-05-22</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linkml-source">LinkML Source</h2>
+<details open>
+
+<pre><code class="language-yaml">name: department_codelist
+annotations:
+  ex_12345.date:
+    tag: ex_12345.date
+    value: 2025-05-22
+  ex_12345.version:
+    tag: ex_12345.version
+    value: 1
+  ex_98765.date:
+    tag: ex_98765.date
+    value: 2025-05-20
+  ex_9876.version:
+    tag: ex_9876.version
+    value: 2
+  value_set.metadata:
+    tag: value_set.metadata
+    value: date, 2025-05-22, version, 2
+from_schema: https://example.org/derived_schema
+exact_mappings:
+- ex:12345
+- ex:98765
+
+</code></pre>
+
+</details>
 
 
 

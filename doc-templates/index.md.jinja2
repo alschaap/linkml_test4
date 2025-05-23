@@ -17,16 +17,8 @@ Testing how to render linkml on github pages
 
 | Property | Description |
 | --- | --- |
-{% for np in schemaview.all_slots(ordered_by="lexical").values()|sort(attribute='name') %}
-  {% set ns = namespace(used_in_core_class=false) %}
-  {% for cls in schemaview.slot_domain_usage(np.name) %}
-    {% if not cls.name.startswith("derived_") %}
-      {% set ns.used_in_core_class = true %}
-    {% endif %}
-  {% endfor %}
-  {% if ns.used_in_core_class %}
+{% for np in schemaview.all_slots(ordered_by="lexical").values()|sort(attribute='name') -%}
 | {{gen.link(np)}} | {{np.description or "No description"}} |
-  {% endif %}
 {% endfor %}
 
 
