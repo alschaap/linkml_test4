@@ -20,7 +20,7 @@ Testing how to render linkml on github pages
 {% for np in schemaview.all_slots(ordered_by="lexical").values()|sort(attribute='name') %}
   {% set ns = namespace(used_in_core_class=false) %}
   {% for cls in schemaview.slot_domain_usage(np.name) %}
-    {% if not cls.startswith("derived_") %}
+    {% if not cls.name.startswith("derived_") %}
       {% set ns.used_in_core_class = true %}
     {% endif %}
   {% endfor %}
