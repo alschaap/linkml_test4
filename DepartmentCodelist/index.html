@@ -288,44 +288,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
+  <a href="#slots-constrained-by-this-enum" class="md-nav__link">
     <span class="md-ellipsis">
-      Slots
+      Slots constrained by this enum
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Identifier and Mapping Information
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#annotations" class="md-nav__link">
     <span class="md-ellipsis">
       Annotations
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      Schema Source
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -357,26 +333,22 @@
   
 
 
-<h1 id="enum-departmentcodelist">Enum: DepartmentCodelist</h1>
-<p>URI: <a href="./">DepartmentCodelist</a></p>
+<h1 id="enum-departmentcodelist"><strong> Enum: </strong> DepartmentCodelist</h1>
 <p><em>This is a dynamic enum</em></p>
-<h2 id="slots">Slots</h2>
+<h2 id="slots-constrained-by-this-enum">Slots constrained by this enum</h2>
 <table>
 <thead>
 <tr>
 <th>Name</th>
-<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="../department/">department</a></td>
-<td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="annotations">Annotations</h3>
+<h2 id="annotations">Annotations</h2>
 <table>
 <thead>
 <tr>
@@ -389,30 +361,10 @@
 <td>ex_12345.date</td>
 <td>2025-05-22</td>
 </tr>
-<tr>
-<td>ex_12345.version</td>
-<td>1</td>
-</tr>
-<tr>
-<td>ex_98765.date</td>
-<td>2025-05-20</td>
-</tr>
-<tr>
-<td>ex_9876.version</td>
-<td>2</td>
-</tr>
-<tr>
-<td>value_set.metadata</td>
-<td>date, 2025-05-22, version, 2</td>
-</tr>
 </tbody>
 </table>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://example.org/derived_schema</li>
-</ul>
 <h2 id="linkml-source">LinkML Source</h2>
-<details>
+<details open>
 
 <pre><code class="language-yaml">name: department_codelist
 annotations:
@@ -435,7 +387,6 @@ from_schema: https://example.org/derived_schema
 exact_mappings:
 - ex:12345
 - ex:98765
-rank: 1000
 
 </code></pre>
 
